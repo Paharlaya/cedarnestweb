@@ -15,8 +15,8 @@ const slides = [
       secondary: { text: 'View Case Studies', href: '#expertise' }
     },
     stats: [
-      { value: '200+', label: 'Projects' },
-      { value: '98%', label: 'Success Rate' },
+      { value: '5+', label: 'Clients' },
+      { value: '100%', label: 'Success Rate' },
       { value: '50%', label: 'Cost Reduction' }
     ],
     gradient: 'from-accent-cyan to-accent-blue'
