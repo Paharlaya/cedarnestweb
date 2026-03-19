@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cedarnestweb.com/sitemap.xml

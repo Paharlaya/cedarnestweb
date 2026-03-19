@@ -357,15 +357,15 @@ const Hyperspeed = ({ effectOptions = {} }: { effectOptions?: any }) => {
       leftCarLights: any;
       rightCarLights: any;
       leftSticks: any;
-      fovTarget: number;
-      speedUpTarget: number;
-      speedUp: number;
-      timeOffset: number;
+      fovTarget: number = 90;
+      speedUpTarget: number = 0;
+      speedUp: number = 0;
+      timeOffset: number = 0;
       renderPass: any;
       bloomPass: any;
       initialized: boolean;
 
-      constructor(container: any, options = {}) {
+      constructor(container: any, options: any = {}) {
         this.initialized = false;
         this.options = options;
         if (this.options.distortion == null) {
@@ -487,9 +487,10 @@ const Hyperspeed = ({ effectOptions = {} }: { effectOptions?: any }) => {
           this.camera,
           new SMAAEffect({
             preset: SMAAPreset.MEDIUM,
+            // @ts-ignore - searchImage and areaImage are not in types but work
             searchImage: SMAAEffect.searchImageDataURL,
             areaImage: SMAAEffect.areaImageDataURL
-          })
+          } as any)
         );
         this.renderPass.renderToScreen = false;
         this.bloomPass.renderToScreen = false;
@@ -781,7 +782,7 @@ const Hyperspeed = ({ effectOptions = {} }: { effectOptions?: any }) => {
         let curve = new THREE.LineCurve3(new THREE.Vector3(0, 0, 0), new THREE.Vector3(0, 0, -1));
         let geometry = new THREE.TubeGeometry(curve, 40, 1, 8, false);
 
-        let instanced = new THREE.InstancedBufferGeometry().copy(geometry);
+        let instanced = new THREE.InstancedBufferGeometry().copy(geometry as any);
         instanced.instanceCount = options.lightPairsPerRoadWay * 2;
 
         let laneWidth = options.roadWidth / options.lanesPerRoad;
@@ -938,7 +939,7 @@ const Hyperspeed = ({ effectOptions = {} }: { effectOptions?: any }) => {
       init() {
         const options = this.options;
         const geometry = new THREE.PlaneGeometry(1, 1);
-        let instanced = new THREE.InstancedBufferGeometry().copy(geometry);
+        let instanced = new THREE.InstancedBufferGeometry().copy(geometry as any);
         let totalSticks = options.totalSideLightSticks;
         instanced.instanceCount = totalSticks;
 
