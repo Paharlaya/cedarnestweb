@@ -18,9 +18,8 @@ export function ParticlesBackground() {
     })
   }, [])
 
-  const particlesLoaded = useCallback(async (container?: Container) => {
+  const particlesLoaded = useCallback(async () => {
     // Particles loaded callback
-    console.log('Particles loaded', container)
   }, [])
 
   const options: ISourceOptions = useMemo(
