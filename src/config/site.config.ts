@@ -105,14 +105,11 @@ export const processSteps: ProcessStep[] = [
 
 export const contactInfo: ContactInfo = {
   email: 'cedarnestwebstudio@gmail.com',
+  phone: '+91 6294399916',
   socialLinks: [
     {
-      platform: 'LinkedIn',
-      url: 'https://linkedin.com/company/cedarnest',
-    },
-    {
-      platform: 'GitHub',
-      url: 'https://github.com/cedarnest',
+      platform: 'Instagram',
+      url: 'https://www.instagram.com/cedarnestweb?igsh=ems3NTJnNG5vejM4&utm_source=qr',
     },
   ],
 }

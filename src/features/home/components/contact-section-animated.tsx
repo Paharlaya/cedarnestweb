@@ -53,10 +53,10 @@ export function ContactSectionAnimated() {
         <div className="max-w-4xl mx-auto text-center">
           <ScrollReveal>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-heading">
-              Let's Build Your Salesforce Ecosystem
+              Let's Build Your Dream Website
             </h2>
             <p className="text-xl text-white/70 mb-12 text-balance">
-              Ready to transform your business with intelligent automation?
+              Ready to bring your business to life with a stunning global presence?
             </p>
           </ScrollReveal>
 
@@ -101,7 +101,7 @@ export function ContactSectionAnimated() {
             {/* CTA Button with ripple effect */}
             <ScrollReveal delay={0.4}>
               <motion.a
-                href={`mailto:${contactInfo.email}?subject=Strategy Call Request`}
+                href="tel:+916294399916"
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl relative overflow-hidden group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -155,8 +155,11 @@ export function ContactSectionAnimated() {
                   />
                 ))}
 
-                <span className="relative z-10 text-white">
-                  Book Your Strategy Call
+                <span className="relative z-10 text-white flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  Call Now & Get Started
                 </span>
               </motion.a>
             </ScrollReveal>

@@ -75,13 +75,14 @@ export function Navigation() {
                 {link.label}
               </a>
             ))}
-            <Button
-              variant="primary"
-              size="md"
-              onClick={(e) => handleNavClick(e as any, '#contact')}
+            <a
+              href="https://calendly.com/paharlayabasnet/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold rounded-xl bg-gradient-to-r from-accent-cyan to-accent-blue text-white hover:opacity-90 transition-all duration-200"
             >
               Book Consultation
-            </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -126,15 +127,14 @@ export function Navigation() {
                 {link.label}
               </a>
             ))}
-            <Button
-              variant="primary"
-              size="md"
-              fullWidth
-              className="mt-4"
-              onClick={(e) => handleNavClick(e as any, '#contact')}
+            <a
+              href="https://calendly.com/paharlayabasnet/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 w-full inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold rounded-xl bg-gradient-to-r from-accent-cyan to-accent-blue text-white hover:opacity-90 transition-all duration-200"
             >
               Book Consultation
-            </Button>
+            </a>
           </div>
         )}
       </nav>

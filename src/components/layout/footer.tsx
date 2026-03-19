@@ -206,6 +206,21 @@ export function Footer() {
                   transition={{ duration: 0.3 }}
                 />
               </motion.a>
+              {contactInfo.phone && (
+                <motion.a
+                  href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}
+                  className="block text-white/70 hover:text-accent-cyan transition-all duration-300 text-sm md:text-base relative group"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <span className="relative z-10">
+                    {contactInfo.phone}
+                  </span>
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-r from-accent-cyan/10 to-accent-blue/10 rounded-md opacity-0 group-hover:opacity-100 blur-md"
+                    transition={{ duration: 0.3 }}
+                  />
+                </motion.a>
+              )}
               {contactInfo.socialLinks?.map((social, index) => (
                 <motion.a
                   key={social.platform}
