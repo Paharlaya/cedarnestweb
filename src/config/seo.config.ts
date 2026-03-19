@@ -3,44 +3,42 @@ import type { Metadata } from 'next'
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cedarnestweb.com'
 
 export const seoConfig = {
-  title: 'Cedar Nest Web - Website Development & IT Company in Darjeeling | Web Design, Salesforce, Digital Solutions',
+  title: 'Cedar Nest Web - Best Website Developers & Designers in India | Premium Web Development Company',
   shortTitle: 'Cedar Nest Web',
-  description: 'Leading website development and IT company in Darjeeling. Expert web designers creating stunning websites, Salesforce integration, e-commerce solutions, and digital transformation services. Top-rated website developers in Darjeeling with 5-star Google reviews.',
+  description: 'India\'s premium website development company delivering enterprise-quality websites at hyperspeed. Best website designers creating stunning, high-performance websites with Salesforce integration, e-commerce solutions, and digital transformation. Based in Darjeeling, serving clients globally with 5-star rated services.',
   keywords: [
-    // Primary keywords
-    'website developers in darjeeling',
-    'website designers in darjeeling',
-    'IT company in darjeeling',
-    'web development darjeeling',
-    'web design darjeeling',
+    // National/International priority
+    'best website developers india',
+    'best website designers india',
+    'premium web development company',
+    'enterprise website development',
+    'top web development agency india',
+    'professional website design india',
+    'best quality websites india',
 
-    // Service keywords
-    'salesforce integration darjeeling',
-    'e-commerce website darjeeling',
-    'digital marketing darjeeling',
-    'website development company darjeeling',
-    'professional website design',
+    // Quality & Speed focused
+    'hyperspeed web development',
+    'enterprise quality websites',
+    'premium website design',
+    'high performance websites',
+    'fastest website delivery',
+
+    // Service excellence
+    'salesforce integration india',
+    'agentforce implementation',
     'custom website development',
-    'responsive web design darjeeling',
-    'mobile app development darjeeling',
-
-    // Local SEO
-    'best IT company darjeeling',
-    'top website developers darjeeling',
-    'darjeeling web designers',
-    'darjeeling website company',
-    'IT services darjeeling',
-    'software company darjeeling',
-    'digital solutions darjeeling',
-
-    // Broader terms
-    'website developers',
-    'website designers',
-    'web development company',
-    'IT solutions provider',
+    'e-commerce website development',
     'digital transformation services',
-    'salesforce consulting',
-    'agentforce implementation'
+
+    // Local + National
+    'website developers darjeeling',
+    'IT company darjeeling india',
+
+    // Competitive positioning
+    'best website development company',
+    'top rated web developers',
+    '5 star website designers',
+    'award winning web design'
   ],
   authors: [{ name: 'Cedar Nest Web Studio' }],
   creator: 'Cedar Nest Web Studio',
@@ -50,8 +48,8 @@ export const seoConfig = {
     canonical: baseUrl,
   },
   openGraph: {
-    title: 'Cedar Nest Web - Leading Website Development & IT Company in Darjeeling',
-    description: 'Expert website developers and designers in Darjeeling. Creating stunning websites, e-commerce solutions, and digital transformation services. 5-star rated IT company.',
+    title: 'Cedar Nest Web - Best Website Developers & Designers in India',
+    description: 'India\'s premium website development company. Enterprise-quality websites delivered at hyperspeed. Best designers creating stunning, high-performance solutions. 5-star rated.',
     url: baseUrl,
     siteName: 'Cedar Nest Web',
     locale: 'en_IN',
@@ -67,8 +65,8 @@ export const seoConfig = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cedar Nest Web - Website Development & IT Company in Darjeeling',
-    description: 'Leading website developers and designers in Darjeeling. Expert in web development, Salesforce, and digital solutions.',
+    title: 'Cedar Nest Web - Best Website Developers in India',
+    description: 'India\'s premium web development company. Enterprise-quality websites at hyperspeed. Best designers, 5-star rated services.',
     images: [`${baseUrl}/twitter-image.jpg`],
     creator: '@cedarnestweb',
   },
@@ -115,10 +113,10 @@ export const metadata: Metadata = {
   },
 }
 
-// Structured data for local business
+// Structured data for organization with national/international scope
 export const structuredData = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': 'Organization',
   '@id': baseUrl,
   name: 'Cedar Nest Web Studio',
   description: seoConfig.description,
@@ -132,6 +130,16 @@ export const structuredData = {
     addressCountry: 'IN',
     postalCode: '734101'
   },
+  areaServed: [
+    {
+      '@type': 'Country',
+      name: 'India'
+    },
+    {
+      '@type': 'Place',
+      name: 'Global'
+    }
+  ],
   geo: {
     '@type': 'GeoCoordinates',
     latitude: 27.0410,
@@ -229,26 +237,26 @@ export const faqStructuredData = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'What services does Cedar Nest Web provide in Darjeeling?',
+      name: 'What makes Cedar Nest Web the best website development company in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Cedar Nest Web provides comprehensive IT services including website development, web design, Salesforce integration, e-commerce solutions, digital marketing, and custom software development for businesses in Darjeeling and across India.'
+        text: 'Cedar Nest Web delivers enterprise-quality websites at hyperspeed, combining premium design with blazing-fast development. With 5-star Google reviews, expertise in modern technologies like Salesforce and Agentforce, we provide the best quality websites in India with global standards.'
       }
     },
     {
       '@type': 'Question',
-      name: 'Why choose Cedar Nest Web as your website developer in Darjeeling?',
+      name: 'Why choose Cedar Nest Web over other website developers in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Cedar Nest Web is the top-rated IT company in Darjeeling with 5-star Google reviews, proven expertise in modern web technologies, competitive pricing, and a track record of delivering high-quality websites for local and international clients.'
+        text: 'Cedar Nest Web stands out with our unique hyperspeed development process that delivers enterprise-quality websites 3x faster than competitors. Our 100% quality score, 5-star ratings, and expertise in cutting-edge technologies make us India\'s premier choice for businesses seeking the best website development.'
       }
     },
     {
       '@type': 'Question',
-      name: 'How much does website development cost in Darjeeling?',
+      name: 'How much does premium website development cost with Cedar Nest Web?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Website development costs vary based on requirements. Cedar Nest Web offers affordable packages starting from ₹15,000 for basic websites to custom enterprise solutions. Contact us for a free consultation and quote.'
+        text: 'Cedar Nest Web offers premium website development with packages ranging from ₹15,000 for starter websites to enterprise solutions. Despite delivering the best quality in India, our hyperspeed process keeps costs competitive. Get enterprise-quality websites at startup-friendly prices.'
       }
     }
   ]
