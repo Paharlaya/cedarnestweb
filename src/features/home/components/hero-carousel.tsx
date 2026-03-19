@@ -75,13 +75,17 @@ export function HeroCarousel({ currentSlideIndex, onSlideChange }: HeroCarouselP
     <>
       {/* Main Carousel Content */}
       <div className="relative w-full h-full">
-        <AnimatePresence mode="popLayout">
+        <AnimatePresence mode="wait" initial={false}>
         <motion.div
           key={currentSlideIndex}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.3, ease: 'easeInOut' }}
+          initial={{ opacity: 0, scale: 0.98, filter: 'blur(4px)' }}
+          animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
+          exit={{ opacity: 0, scale: 1.02, filter: 'blur(4px)' }}
+          transition={{
+            duration: 0.5,
+            ease: 'easeInOut',
+            opacity: { duration: 0.3, ease: 'easeInOut' }
+          }}
           className="text-center space-y-6 max-w-5xl mx-auto min-h-[500px] flex flex-col justify-center"
         >
           {/* Title */}
