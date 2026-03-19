@@ -18,7 +18,7 @@ const slides = [
  */
 export function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
-  const slideInterval = 10000
+  const slideInterval = 20000
 
   // Auto-slide functionality
   useEffect(() => {

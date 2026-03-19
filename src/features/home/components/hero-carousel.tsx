@@ -7,17 +7,17 @@ import { motion, AnimatePresence } from 'framer-motion'
 const slides = [
   {
     id: 1,
-    title: 'Digital Transformation',
-    subtitle: 'Experts',
-    description: 'Transform your business with cutting-edge digital solutions. From legacy system modernization to cloud migration, we deliver end-to-end transformation that drives growth and innovation.',
+    title: 'Lightning Fast Development',
+    subtitle: 'Enterprise Excellence',
+    description: 'We build the best quality websites at hyperspeed. Our blazing-fast development process delivers exceptional results without compromising on excellence. Experience the perfect blend of speed and craftsmanship.',
     cta: {
-      primary: { text: 'Start Transformation', href: '#contact' },
+      primary: { text: 'Start Your Project', href: '#contact' },
       secondary: { text: 'View Case Studies', href: '#testimonials' }
     },
     stats: [
-      { value: '10+', label: 'Happy Clients' },
-      { value: '100%', label: 'Success Rate' },
-      { value: '50%', label: 'Cost Reduction' }
+      { value: '3x Faster', label: 'Delivery Speed' },
+      { value: '100%', label: 'Quality Score' },
+      { value: '5 Stars', label: 'Client Rating' }
     ],
     gradient: 'from-accent-cyan to-accent-blue'
   },
@@ -75,45 +75,30 @@ export function HeroCarousel({ currentSlideIndex, onSlideChange }: HeroCarouselP
     <>
       {/* Main Carousel Content */}
       <div className="relative w-full h-full">
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="popLayout">
         <motion.div
           key={currentSlideIndex}
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5, ease: 'easeInOut' }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3, ease: 'easeInOut' }}
           className="text-center space-y-6 max-w-5xl mx-auto min-h-[500px] flex flex-col justify-center"
         >
           {/* Title */}
-          <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-heading px-4 sm:px-0 min-h-[120px] sm:min-h-[140px] lg:min-h-[160px] flex flex-col justify-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-          >
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-heading px-4 sm:px-0 min-h-[120px] sm:min-h-[140px] lg:min-h-[160px] flex flex-col justify-center">
             {currentSlideData.title} &
             <span className={`block bg-gradient-to-r ${currentSlideData.gradient} bg-clip-text text-transparent pb-2`}>
               {currentSlideData.subtitle}
             </span>
-          </motion.h1>
+          </h1>
 
           {/* Description */}
-          <motion.p
-            className="text-sm sm:text-base md:text-lg text-white/80 max-w-3xl mx-auto text-balance px-4 sm:px-0 min-h-[60px] sm:min-h-[80px] flex items-center justify-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-          >
+          <p className="text-sm sm:text-base md:text-lg text-white/80 max-w-3xl mx-auto text-balance px-4 sm:px-0 min-h-[60px] sm:min-h-[80px] flex items-center justify-center">
             {currentSlideData.description}
-          </motion.p>
+          </p>
 
           {/* CTA Buttons */}
-          <motion.div
-            className="flex gap-3 justify-center flex-wrap px-4 sm:px-0"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-          >
+          <div className="flex gap-3 justify-center flex-wrap px-4 sm:px-0">
             <a
               href={currentSlideData.cta.primary.href}
               className={`inline-flex items-center justify-center px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-semibold rounded-xl bg-gradient-to-r ${currentSlideData.gradient} text-white hover:opacity-90 transition-all duration-200 hover:scale-105`}
@@ -126,30 +111,19 @@ export function HeroCarousel({ currentSlideIndex, onSlideChange }: HeroCarouselP
             >
               {currentSlideData.cta.secondary.text}
             </a>
-          </motion.div>
+          </div>
 
           {/* Stats */}
-          <motion.div
-            className="grid grid-cols-3 gap-2 sm:gap-8 max-w-md mx-auto pt-6 px-2 sm:px-0 pb-24"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-          >
+          <div className="grid grid-cols-3 gap-2 sm:gap-8 max-w-md mx-auto pt-6 px-2 sm:px-0 pb-24">
             {currentSlideData.stats.map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                className="text-center"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.6 + index * 0.1 }}
-              >
+              <div key={stat.label} className="text-center">
                 <div className={`text-lg sm:text-2xl font-bold bg-gradient-to-r ${currentSlideData.gradient} bg-clip-text text-transparent`}>
                   {stat.value}
                 </div>
                 <div className="text-white/70 text-[10px] sm:text-xs">{stat.label}</div>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </motion.div>
         </AnimatePresence>
 
