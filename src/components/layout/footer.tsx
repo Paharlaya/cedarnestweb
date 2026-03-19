@@ -133,12 +133,13 @@ export function Footer() {
 
           {/* Services */}
           <motion.div
+            className="text-center md:text-left"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            <h4 className="text-white text-lg font-semibold mb-4 font-heading relative">
+            <h4 className="text-white text-lg font-semibold mb-4 font-heading relative inline-block">
               <span className="relative z-10">
                 Services
               </span>
