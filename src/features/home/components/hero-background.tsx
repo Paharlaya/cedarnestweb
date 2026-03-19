@@ -1,39 +1,32 @@
 'use client'
 
-import { ParticlesBackground } from './particles'
+import dynamic from 'next/dynamic'
+
+const Hyperspeed = dynamic(() => import('@/components/ui/hyperspeed'), {
+  ssr: false,
+  loading: () => (
+    <div className="absolute inset-0 bg-gradient-to-br from-dark via-dark-lighter to-dark" />
+  )
+})
 
 /**
  * Hero Background - Client Component
- * Combines particle effects with gradient animations
- * Interactive particle system with mouse repulse and click effects
+ * Features the hyperspeed animation effect
+ * Creates an immersive futuristic background
  */
 export function HeroBackground() {
   return (
     <div className="absolute inset-0 overflow-hidden">
-      {/* Gradient Background */}
+      {/* Base gradient for fallback */}
       <div className="absolute inset-0 bg-gradient-to-br from-dark via-dark-lighter to-dark" />
 
-      {/* Particles Effect */}
-      <ParticlesBackground />
-
-      {/* Animated Orbs */}
-      <div className="absolute -top-1/2 -left-1/2 w-full h-full pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-cyan/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-blue/10 rounded-full blur-3xl animate-pulse animation-delay-400" />
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-primary-500/10 rounded-full blur-2xl animate-pulse animation-delay-200" />
+      {/* Hyperspeed Effect */}
+      <div className="absolute inset-0">
+        <Hyperspeed />
       </div>
 
-      {/* Subtle Grid Pattern */}
-      <div
-        className="absolute inset-0 opacity-5 pointer-events-none"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(0, 212, 255, 0.1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(0, 212, 255, 0.1) 1px, transparent 1px)
-          `,
-          backgroundSize: '50px 50px',
-        }}
-      />
+      {/* Overlay gradient for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/40 to-transparent pointer-events-none" />
     </div>
   )
 }
