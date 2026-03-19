@@ -7,7 +7,7 @@ import type { CompanyInfo, Service, ProcessStep, ContactInfo, Testimonial, Clien
  */
 
 export const company: CompanyInfo = {
-  name: 'Cedar Nest',
+  name: 'Cedar Nest Web',
   tagline: 'Digital Transformation & Salesforce Integration Experts',
   logo: {
     src: '/cedar-nest-logo.png',
