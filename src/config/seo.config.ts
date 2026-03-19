@@ -107,14 +107,11 @@ export const metadata: Metadata = {
   alternates: seoConfig.alternates,
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon.png', type: 'image/png' },
+      { url: '/favicon.ico' },
+      { url: '/favicon.png', type: 'image/png' }
     ],
-    apple: '/apple-icon.png',
-    other: {
-      rel: 'mask-icon',
-      url: '/cedar-nest-logo.png',
-    },
+    shortcut: '/favicon.png',
+    apple: '/apple-touch-icon.png',
   },
 }
 
