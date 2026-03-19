@@ -185,15 +185,15 @@ export function TestimonialsSection() {
             </p>
 
             {/* Logo Marquee Container */}
-            <div className="relative overflow-hidden py-8">
+            <div className="relative overflow-hidden py-10">
               {/* Gradient Masks */}
               <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-dark-lighter to-transparent z-10" />
               <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-dark-lighter to-transparent z-10" />
 
               {/* Double Row for Seamless Loop */}
-              <div className="flex gap-16">
+              <div className="flex gap-20">
                 <motion.div
-                  className="flex gap-16 items-center"
+                  className="flex gap-20 items-center"
                   animate={{
                     x: [0, -100 * clientLogos.length],
                   }}
@@ -210,54 +210,17 @@ export function TestimonialsSection() {
                     <motion.div
                       key={`${client.id}-${index}`}
                       className="flex-shrink-0 group cursor-pointer"
-                      whileHover={{ scale: 1.1 }}
+                      whileHover={{ scale: 1.15 }}
                     >
-                      <div className="relative w-32 h-16 opacity-80 group-hover:opacity-100 transition-all duration-300">
-                        <Image
-                          src={client.logo}
-                          alt={client.name}
-                          fill
-                          className="object-contain"
-                        />
-                      </div>
-                    </motion.div>
-                  ))}
-                </motion.div>
-              </div>
-            </div>
-
-            {/* Second Row Moving Opposite Direction */}
-            <div className="relative overflow-hidden py-8">
-              <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-dark-lighter to-transparent z-10" />
-              <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-dark-lighter to-transparent z-10" />
-
-              <div className="flex gap-16">
-                <motion.div
-                  className="flex gap-16 items-center"
-                  animate={{
-                    x: [-100 * clientLogos.length, 0],
-                  }}
-                  transition={{
-                    x: {
-                      duration: 20,
-                      repeat: Infinity,
-                      ease: 'linear',
-                    },
-                  }}
-                >
-                  {[...clientLogos, ...clientLogos].map((client, index) => (
-                    <motion.div
-                      key={`reverse-${client.id}-${index}`}
-                      className="flex-shrink-0 group cursor-pointer"
-                      whileHover={{ scale: 1.1 }}
-                    >
-                      <div className="relative w-32 h-16 opacity-80 group-hover:opacity-100 transition-all duration-300">
-                        <Image
-                          src={client.logo}
-                          alt={client.name}
-                          fill
-                          className="object-contain"
-                        />
+                      <div className="relative w-32 h-32 bg-white rounded-full p-4 shadow-xl group-hover:shadow-2xl transition-all duration-300">
+                        <div className="relative w-full h-full">
+                          <Image
+                            src={client.logo}
+                            alt={client.name}
+                            fill
+                            className="object-contain p-2"
+                          />
+                        </div>
                       </div>
                     </motion.div>
                   ))}

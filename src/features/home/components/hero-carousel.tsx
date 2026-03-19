@@ -12,7 +12,7 @@ const slides = [
     description: 'Transform your business with cutting-edge digital solutions. From legacy system modernization to cloud migration, we deliver end-to-end transformation that drives growth and innovation.',
     cta: {
       primary: { text: 'Start Transformation', href: '#contact' },
-      secondary: { text: 'View Case Studies', href: '#expertise' }
+      secondary: { text: 'View Case Studies', href: '#testimonials' }
     },
     stats: [
       { value: '10+', label: 'Happy Clients' },
@@ -156,11 +156,11 @@ export function HeroCarousel({ currentSlideIndex, onSlideChange }: HeroCarouselP
         {/* Minimal Navigation Arrows - At extreme edges */}
         <button
         onClick={goToPrevious}
-        className="absolute -left-10 md:-left-20 lg:-left-32 xl:-left-40 2xl:-left-48 top-1/2 -translate-y-1/2 w-12 h-16 flex items-center justify-center text-white/40 hover:text-accent-cyan transition-all duration-200 group z-20"
+        className="absolute left-2 sm:left-0 sm:-left-10 md:-left-20 lg:-left-32 xl:-left-40 2xl:-left-48 top-1/2 -translate-y-1/2 w-10 h-14 sm:w-12 sm:h-16 flex items-center justify-center text-white/40 hover:text-accent-cyan transition-all duration-200 group z-20"
         aria-label="Previous slide"
       >
         <motion.div
-          className="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[14px] border-r-current"
+          className="w-0 h-0 border-t-[8px] sm:border-t-[10px] border-t-transparent border-b-[8px] sm:border-b-[10px] border-b-transparent border-r-[12px] sm:border-r-[14px] border-r-current"
           whileHover={{ scale: 1.2, x: -3 }}
           transition={{ type: 'spring', stiffness: 400 }}
         />
@@ -168,11 +168,11 @@ export function HeroCarousel({ currentSlideIndex, onSlideChange }: HeroCarouselP
 
       <button
         onClick={goToNext}
-        className="absolute -right-10 md:-right-20 lg:-right-32 xl:-right-40 2xl:-right-48 top-1/2 -translate-y-1/2 w-12 h-16 flex items-center justify-center text-white/40 hover:text-accent-cyan transition-all duration-200 group z-20"
+        className="absolute right-2 sm:right-0 sm:-right-10 md:-right-20 lg:-right-32 xl:-right-40 2xl:-right-48 top-1/2 -translate-y-1/2 w-10 h-14 sm:w-12 sm:h-16 flex items-center justify-center text-white/40 hover:text-accent-cyan transition-all duration-200 group z-20"
         aria-label="Next slide"
       >
         <motion.div
-          className="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[14px] border-l-current"
+          className="w-0 h-0 border-t-[8px] sm:border-t-[10px] border-t-transparent border-b-[8px] sm:border-b-[10px] border-b-transparent border-l-[12px] sm:border-l-[14px] border-l-current"
           whileHover={{ scale: 1.2, x: 3 }}
           transition={{ type: 'spring', stiffness: 400 }}
         />

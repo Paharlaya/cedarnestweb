@@ -171,7 +171,7 @@ export const clientLogos: ClientLogo[] = [
   {
     id: 'bethel',
     name: 'Bethel Breeze',
-    logo: '/clients/bethel-breeze.jpeg',
+    logo: '/clients/bethel-breeze.png',
   },
   {
     id: 'chhyajalo',
