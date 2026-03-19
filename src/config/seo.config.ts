@@ -105,6 +105,17 @@ export const metadata: Metadata = {
   robots: seoConfig.robots,
   verification: seoConfig.verification,
   alternates: seoConfig.alternates,
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.png', type: 'image/png' },
+    ],
+    apple: '/apple-icon.png',
+    other: {
+      rel: 'mask-icon',
+      url: '/cedar-nest-logo.png',
+    },
+  },
 }
 
 // Structured data for local business
