@@ -76,7 +76,7 @@ export function Footer() {
 
       <div className="container-custom py-12 relative z-10">
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -243,6 +243,86 @@ export function Footer() {
                 </motion.a>
               ))}
             </div>
+          </motion.div>
+
+          {/* Google Reviews */}
+          <motion.div
+            className="text-center md:text-left"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.6, duration: 0.6 }}
+          >
+            <h4 className="text-white text-lg font-semibold mb-4 font-heading relative inline-block">
+              <span className="relative z-10">
+                Google Reviews
+              </span>
+              <motion.div
+                className="absolute -bottom-1 left-0 h-[2px] bg-gradient-to-r from-accent-cyan to-accent-blue"
+                initial={{ width: 0 }}
+                whileInView={{ width: '100px' }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.7, duration: 0.8 }}
+              />
+            </h4>
+
+            {/* 5 Star Rating Display */}
+            <div className="mb-3">
+              <div className="flex gap-1 mb-2 justify-center md:justify-start">
+                {[...Array(5)].map((_, i) => (
+                  <motion.svg
+                    key={i}
+                    className="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.8 + i * 0.1 }}
+                  >
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </motion.svg>
+                ))}
+              </div>
+              <p className="text-white/70 text-sm">5.0 Rating on Google</p>
+            </div>
+
+            {/* Review Button */}
+            <motion.a
+              href="https://g.page/r/CSOzOCCcr8LmEBM/review"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-dark-card border border-white/20 rounded-lg text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300 text-sm group"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+              <span>Write a Review</span>
+              <motion.svg
+                className="w-3 h-3 opacity-0 group-hover:opacity-100 -ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                animate={{ x: [0, 3, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity }}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </motion.svg>
+            </motion.a>
+
+            {/* Business Badge */}
+            <motion.div
+              className="mt-4 text-xs text-white/50"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 1 }}
+            >
+              <p>Cedar Nest Web Studio</p>
+              <p>Verified Business</p>
+            </motion.div>
           </motion.div>
         </motion.div>
 

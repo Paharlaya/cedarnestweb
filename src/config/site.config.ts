@@ -1,4 +1,4 @@
-import type { CompanyInfo, Service, ProcessStep, ContactInfo } from '@/types'
+import type { CompanyInfo, Service, ProcessStep, ContactInfo, Testimonial, ClientLogo } from '@/types'
 
 /**
  * Centralized site configuration
@@ -113,6 +113,77 @@ export const contactInfo: ContactInfo = {
     },
   ],
 }
+
+export const testimonials: Testimonial[] = [
+  {
+    id: 'tribridge',
+    name: 'Bhawana Subba',
+    role: 'Owner',
+    company: 'Tribridge Pvt Ltd',
+    content: 'Cedar Nest transformed our online presence completely. The website they built increased our conversions by 200% within the first month. Their attention to detail and understanding of our business needs was exceptional.',
+    rating: 5,
+  },
+  {
+    id: 'depemblin',
+    name: 'Pranay Sharma',
+    role: 'Owner',
+    company: "De'Pemblin Tours & Travels",
+    content: 'Paharlaya Bhai who runs CedarNest is our go-to for all website and IT services. He\'s proactive, highly knowledgeable, trustworthy and efficient. Thank you bhai for such an amazing website - you\'ve surpassed all our expectations with this level of quality!',
+    rating: 5,
+  },
+  {
+    id: 'bethel',
+    name: 'Nehal Rai',
+    role: 'Owner',
+    company: 'Bethel Breeze',
+    content: 'The team at Cedar Nest delivered beyond our expectations. They built a modern, responsive website that perfectly represents our brand. Their support and professionalism throughout the project was outstanding.',
+    rating: 5,
+  },
+  {
+    id: 'chhyajalo',
+    name: 'Srijana',
+    role: 'Owner',
+    company: 'Chhyajalo',
+    content: "I'm amazed by the quality of work Cedar Nest delivered. They understood our vision and created a website that not only looks great but also performs excellently. Highly recommend their services!",
+    rating: 5,
+  },
+  {
+    id: 'darjeeling-tnt',
+    name: 'Passang Tamang',
+    role: 'Owner',
+    company: 'Darjeeling Tours & Travels',
+    content: 'Cedar Nest helped us establish a strong digital presence. Their expertise in web development and design is evident in every aspect of our new website. The results speak for themselves!',
+    rating: 5,
+  },
+]
+
+export const clientLogos: ClientLogo[] = [
+  {
+    id: 'tribridge',
+    name: 'Tribridge Pvt Ltd',
+    logo: '/clients/tribridge.png',
+  },
+  {
+    id: 'depemblin',
+    name: "De'Pemblin Tours & Travels",
+    logo: '/clients/depemblin.png',
+  },
+  {
+    id: 'bethel',
+    name: 'Bethel Breeze',
+    logo: '/clients/bethel-breeze.jpeg',
+  },
+  {
+    id: 'chhyajalo',
+    name: 'Chhyajalo',
+    logo: '/clients/chhyajalo.png',
+  },
+  {
+    id: 'darjeeling-tnt',
+    name: 'Darjeeling Tours & Travels',
+    logo: '/clients/darjeeling-tnt.png',
+  },
+]
 
 export const siteConfig = {
   company,

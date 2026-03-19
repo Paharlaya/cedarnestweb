@@ -1,6 +1,7 @@
 import { HeroSection } from '@/features/home/components/hero-section'
 import { ExpertiseSectionAnimated } from '@/features/home/components/expertise-section-animated'
 import { ProcessSectionAnimated } from '@/features/home/components/process-section-animated'
+import { TestimonialsSection } from '@/features/home/components/testimonials-section'
 import { ContactSectionAnimated } from '@/features/home/components/contact-section-animated'
 import { Navigation } from '@/components/layout/navigation'
 import { Footer } from '@/components/layout/footer'
@@ -19,6 +20,7 @@ export default function HomePage() {
         <HeroSection />
         <ExpertiseSectionAnimated />
         <ProcessSectionAnimated />
+        <TestimonialsSection />
         <ContactSectionAnimated />
       </main>
 

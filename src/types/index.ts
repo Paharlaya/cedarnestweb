@@ -31,6 +31,24 @@ export interface ProcessStep {
   details?: string[]
 }
 
+// Testimonial types
+export interface Testimonial {
+  id: string
+  name: string
+  role: string
+  company: string
+  content: string
+  rating: number
+  image?: string
+}
+
+export interface ClientLogo {
+  id: string
+  name: string
+  logo: string
+  url?: string
+}
+
 // Contact information types
 export interface ContactInfo {
   email: string
