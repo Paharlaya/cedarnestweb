@@ -8,34 +8,34 @@ import type { CompanyInfo, Service, ProcessStep, ContactInfo, Testimonial, Clien
 
 export const company: CompanyInfo = {
   name: 'Cedar Nest Web',
-  tagline: 'Digital Transformation & Salesforce Integration Experts',
+  tagline: 'Premium Website Design & Development Experts',
   logo: {
     src: '/cedar-nest-logo.png',
     alt: 'Cedar Nest',
   },
-  description: 'Full-service digital agency specializing in custom web development and Salesforce solutions. We build powerful websites and implement enterprise CRM systems that drive growth.',
+  description: 'Full-service website design and development agency. We build stunning, high-performance websites and e-commerce solutions that drive growth and deliver real results.',
 }
 
 export const services: Service[] = [
   {
-    id: 'salesforce',
-    title: 'Salesforce Solutions',
-    description: 'Complete CRM implementation and optimization services',
+    id: 'web-design',
+    title: 'Website Design',
+    description: 'Stunning, modern websites crafted to represent your brand',
     features: [
-      'Sales Cloud Implementation',
-      'Service Cloud Setup',
-      'Experience Cloud Portals',
-      'Custom Apex Development',
-      'Third-party Integrations',
+      'Custom UI/UX Design',
+      'Mobile-First Responsive',
+      'Brand Identity Integration',
+      'Landing Page Design',
+      'Conversion-Focused Layouts',
     ],
     isFeatured: true,
   },
   {
-    id: 'ai-agentforce',
+    id: 'web-development',
     title: 'Web Development',
     description: 'Modern, responsive websites that drive conversions',
     features: [
-      'Custom Website Design',
+      'Custom Website Development',
       'E-commerce Solutions',
       'Progressive Web Apps',
       'Performance Optimization',
@@ -44,15 +44,15 @@ export const services: Service[] = [
     isFeatured: true,
   },
   {
-    id: 'integration',
-    title: 'Digital Integration',
-    description: 'Seamlessly connect your digital ecosystem',
+    id: 'digital-growth',
+    title: 'Digital Growth',
+    description: 'Grow your online presence and reach more customers',
     features: [
-      'API Development',
-      'System Integration',
-      'Database Migration',
-      'Cloud Infrastructure',
-      'Workflow Automation',
+      'Search Engine Optimization',
+      'Speed & Performance Tuning',
+      'Content Management Systems',
+      'Analytics & Reporting',
+      'Ongoing Maintenance',
     ],
     isFeatured: false,
   },

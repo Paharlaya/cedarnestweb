@@ -152,7 +152,7 @@ export function Footer() {
               />
             </h4>
             <ul className="space-y-2">
-              {['Salesforce Implementation', 'AI & Agentforce', 'Enterprise Integration', 'Digital Transformation'].map((service, index) => (
+              {['Website Design', 'Web Development', 'E-commerce Solutions', 'SEO & Performance'].map((service, index) => (
                 <motion.li
                   key={service}
                   className="text-white/70 hover:text-accent-cyan transition-colors cursor-pointer relative group"

@@ -6,21 +6,26 @@ import { cn } from '@/lib/utils/cn'
 import { ScrollReveal, StaggerReveal, fadeInUp, fadeInScale } from '@/components/animations/scroll-animations'
 
 const ServiceIcons = {
-  salesforce: (
+  'web-design': (
     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-      <path d="M20 5L35 12.5V27.5L20 35L5 27.5V12.5L20 5Z" stroke="#00D4FF" strokeWidth="2" fill="none"/>
+      <rect x="4" y="8" width="32" height="22" rx="3" stroke="#00D4FF" strokeWidth="2" fill="none"/>
+      <line x1="4" y1="14" x2="36" y2="14" stroke="#00D4FF" strokeWidth="2"/>
+      <circle cx="8" cy="11" r="1.5" fill="#00D4FF"/>
+      <circle cx="13" cy="11" r="1.5" fill="#00D4FF"/>
+      <line x1="13" y1="30" x2="27" y2="30" stroke="#00D4FF" strokeWidth="2"/>
     </svg>
   ),
-  'ai-agentforce': (
+  'web-development': (
     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-      <circle cx="20" cy="20" r="15" stroke="#00D4FF" strokeWidth="2" fill="none"/>
-      <circle cx="20" cy="20" r="5" fill="#00D4FF"/>
+      <polyline points="13,16 7,20 13,24" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+      <polyline points="27,16 33,20 27,24" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+      <line x1="23" y1="12" x2="17" y2="28" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round"/>
     </svg>
   ),
-  integration: (
+  'digital-growth': (
     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-      <rect x="5" y="10" width="30" height="20" rx="3" stroke="#00D4FF" strokeWidth="2" fill="none"/>
-      <line x1="5" y1="15" x2="35" y2="15" stroke="#00D4FF" strokeWidth="2"/>
+      <polyline points="6,28 14,18 22,22 34,10" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+      <polyline points="28,10 34,10 34,16" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
     </svg>
   ),
 }
@@ -51,10 +56,10 @@ export function ExpertiseSectionAnimated() {
       <div className="container-custom relative">
         <ScrollReveal className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-heading">
-            Enterprise-Grade Expertise
+            What We Build For You
           </h2>
           <p className="text-xl text-white/70 max-w-2xl mx-auto text-balance">
-            We don't just implement technology. We build competitive advantages.
+            We don't just build websites. We craft digital experiences that grow your business.
           </p>
         </ScrollReveal>
 

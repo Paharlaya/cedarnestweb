@@ -5,7 +5,7 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://cedarnestweb.com'
 export const seoConfig = {
   title: 'Cedar Nest Web - Best Website Developers & Designers in India | Premium Web Development Company',
   shortTitle: 'Cedar Nest Web',
-  description: 'India\'s premium website development company delivering enterprise-quality websites at hyperspeed. Best website designers creating stunning, high-performance websites with Salesforce integration, e-commerce solutions, and digital transformation. Based in Darjeeling, serving clients globally with 5-star rated services.',
+  description: 'India\'s premium website development company delivering enterprise-quality websites at hyperspeed. Best website designers creating stunning, high-performance websites, e-commerce solutions, and digital growth services. Based in Darjeeling, serving clients globally with 5-star rated services.',
   keywords: [
     // National/International priority
     'best website developers india',
@@ -24,11 +24,11 @@ export const seoConfig = {
     'fastest website delivery',
 
     // Service excellence
-    'salesforce integration india',
-    'agentforce implementation',
     'custom website development',
     'e-commerce website development',
-    'digital transformation services',
+    'responsive web design india',
+    'seo optimized websites',
+    'digital growth services',
 
     // Local + National
     'website developers darjeeling',
@@ -191,31 +191,31 @@ export const structuredData = {
   knowsAbout: [
     'Website Development',
     'Web Design',
-    'Salesforce Integration',
     'E-commerce Solutions',
     'Digital Marketing',
     'SEO Services',
-    'Mobile App Development',
-    'Cloud Solutions'
+    'Performance Optimization',
+    'Responsive Web Design',
+    'UI/UX Design'
   ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'IT Services',
+    name: 'Web Services',
     itemListElement: [
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Website Development',
-          description: 'Custom website development services for businesses in Darjeeling'
+          name: 'Website Design',
+          description: 'Custom website design services for businesses in Darjeeling'
         }
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Salesforce Integration',
-          description: 'Expert Salesforce CRM implementation and integration services'
+          name: 'Website Development',
+          description: 'Professional website development with modern technologies'
         }
       },
       {
@@ -240,7 +240,7 @@ export const faqStructuredData = {
       name: 'What makes Cedar Nest Web the best website development company in India?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Cedar Nest Web delivers enterprise-quality websites at hyperspeed, combining premium design with blazing-fast development. With 5-star Google reviews, expertise in modern technologies like Salesforce and Agentforce, we provide the best quality websites in India with global standards.'
+        text: 'Cedar Nest Web delivers enterprise-quality websites at hyperspeed, combining premium design with blazing-fast development. With 5-star Google reviews and expertise in modern web technologies, we provide the best quality websites in India with global standards.'
       }
     },
     {
